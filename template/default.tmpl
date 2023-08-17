@@ -135,3 +135,7 @@ Alerts Resolved:
 {{ template "__text_alert_list" .Alerts.Resolved }}
 {{ end }}
 {{ end }}
+
+{{ define "wecomrobot.default.message" }}{{ template "wechat.default.message" . }}{{ end }}
+{{ define "dingtalkrobot.default.message" }}{{ template "wechat.default.message" . }}{{ end }}
+{{ define "feishubot.default.message" }}{{ template "wechat.default.message" . }}{{ end }}
